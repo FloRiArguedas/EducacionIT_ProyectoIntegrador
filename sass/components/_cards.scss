@@ -1,0 +1,85 @@
+.card {
+    width: 220px;
+    max-width: 300px;
+    height: 400px;
+    background-color: orange;
+    overflow: hidden; /* Ajusta al contenedor, lo que sobra lo corta */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0px 1px 5px 0px (0,0,0,0.3);
+
+    transition: clip-path .8s; /* NO puede ser ALL | MALA PRACTICA | Se deben poner las propiedades que quiero animar por ejemplo clip-path */
+
+    &:hover,
+    &:focus{
+        transform: scale(1.03) skew(0); /* El skew deforma  (0.5deg) */
+        transform-origin: bottom;
+        box-shadow: 0px 7px 8px 0px rgba(0 ,0 ,0 ,0.5);
+    }
+
+    &__image-container{
+        height: 200px;
+        overflow: hidden;
+    }
+
+    &__image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &:hover & image,
+    &:focus &__image {
+        transform: scale(1.4) rotate(5deg);
+        transform-origin: center;
+    }
+
+    &:nth-child(5n +1){
+        background-image: linear-gradient(to top, #aaafad 0%, #60efff 100%);
+    }
+
+    &:nth-child(5n +2){ /* cambiarle el color */
+        background-image: linear-gradient(to top, #aaafad 0%, #60efff 100%);
+    }
+
+    &:nth-child(5n +4){ /* cambiarle el color */
+        background-image: linear-gradient(to top, #f89b29 0%, #60efff 100%);
+    }
+
+    &__image-container{
+        height: 200px;
+        background-color: blue;
+        overflow: hidden;
+        clip-path: polygon(0 0, 100% 0, 100% 200px, 0 180px); /* Estado inicial, sin mouse encima */
+    }
+
+    &:hover &__image-container,
+    &:focus &__image-container {
+        clip-path: polygon(0 0, 100% 0, 100% 190px, 0 200px); /* Estado final */
+    }
+
+    /* -------------------------------------------------------------------- */
+
+    @media (max-width: 768px){
+        & {
+            min-width: 400px;
+            max-width: 500px;
+            height: 200px;
+        }
+
+        &__article{
+            display: flex;
+        }
+
+        & &__image-container{ /* .card .card__image-container */
+            width: 40%;
+            clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%); /* Estado Inicial */
+        }
+
+        &:hover &__image-container,
+        &:focus &__image-container {
+            width: 40%;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); /* Estado final */
+        }
+    }
+}

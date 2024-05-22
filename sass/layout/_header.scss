@@ -1,0 +1,162 @@
+/* ----------------------------- */
+/* HEADER */
+/* ----------------------------- */
+
+.main-header{
+    display: flex;
+    flex-direction: column;
+
+
+    /* Yo debo hacerlo min-width */
+    @media (max-width: 768px){
+        & { /* main-headier */
+            flex-direction: column-reverse;
+        }
+    } 
+}
+
+#menu {
+    display: none;
+
+    &:checked + .nav-bar {
+        display: block;
+    }
+
+    &:checked ~ .search-bar .menu-toogle .menu-toogle__label{
+        background-color: yellow;
+    }
+}
+
+
+/* ----------------------------- */
+/* NAVBAR */
+/* ----------------------------- */
+
+.nav-bar {
+    background-color: mediumaquamarine;
+    border: 0.5px solid greenyellow;
+
+    &__nav-list { /* .nav-bar__nav-list */ 
+        display:flex;
+        list-style-type: none;
+        justify-content: center;
+
+        @media (max-width: 768px){
+            & {
+                flex-direction: column;
+            }
+        }
+    }
+
+    &__nav-item{
+        text-align: center;
+        background-color: pink;
+    }
+    
+    &__nav-link {
+        display: block;
+        background-color: purple; 
+        padding: 1rem 2rem;
+        text-decoration: none;
+    }
+
+    @media (max-width: 768px){
+        & { /* El & hace referencia al padre en este caso nav-bar */
+            display: none;
+        }
+    }
+}
+
+
+/* ----------------------------- */
+/* SEARCH BAR */
+/* ----------------------------- */
+
+
+.search-bar {
+    background-color: olivedrab;
+    display: flex; 
+    justify-content: space-around;
+
+    &__logo-container {
+        width: 18.75em;
+        height: 3.75em;
+    }
+
+    &__form-container{
+        padding: 1rem;
+        background-color: gold;
+        display: flex;
+        flex-basis: 100%;
+       justify-content: center;
+    }
+
+    &__form-label {
+        background-color: greenyellow;
+    }
+
+    &__form-search {
+        background-color: deeppink;
+        width: 70%;
+    }
+
+    &__form-submit {
+        background-color: darkslategray;
+        color: white;
+    }
+    
+    &__carrito-container {
+        flex: 0 0 3rem; /* shorthand (grow shrihk basis */
+        background-color: goldenrod;
+    }
+
+}
+
+/* ----------------------------- */
+/* MENÚ TOOGLE */
+/* ----------------------------- */
+
+
+.menu-toogle{
+    display: none;    
+    background-color: red;
+    flex: 0 0 3rem;
+    position: relative;
+    cursor: pointer;
+
+    &__label {
+        display: block;
+        background-color: black;
+        height: 100%;
+    }
+
+    &__top-bread,
+    &__meat,
+    &__bottom-bread {
+        display: block;
+        background-color: #333;
+        height: .2em;
+        position: absolute;
+        left: .5rem;
+        right: .5rem;
+    }
+
+    &__top-bread{
+        top: .8rem;
+    }
+
+    &__meat {
+        top: 50%;
+        margin-top: -.1rem;
+    }
+    &__bottom-bread {
+        bottom: .8rem;
+    }
+
+   
+    @media (max-width: 768px){
+        & { /* menu-toogle */
+            display: block;
+        }
+    }
+}
