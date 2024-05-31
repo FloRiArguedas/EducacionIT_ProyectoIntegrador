@@ -7,10 +7,12 @@
   flex-direction: column;
 
   /* Yo debo hacerlo min-width */
-  @media (max-width: 768px) {
+ /*   @media (max-width: 768px) */
+  @media (min-width: 576px){
     & {
       /* main-headier */
-      flex-direction: column-reverse;
+      /* flex-direction: column-reverse; */
+      flex-direction: column;
     }
   }
 }
@@ -151,7 +153,7 @@
   &__meat,
   &__bottom-bread {
     display: block;
-    background-color: #f6c500;
+    background-color: #6405c2;
     height: 0.2em;
     position: absolute;
     left: 0.5rem;
