@@ -42,13 +42,13 @@
         padding-top: 0.2rem;
     }
 
-    &:hover, 
+    &:hover &__description, 
     &:focus &__description  {
         color: white;
     }
 
     //!PREGUNTARLE A MAXI PORQUE LO APLICA TAMBIÉN AL DESCRIPTION
-    &:hover, 
+    &:hover &__heading, 
     &:focus &__heading {
         color: #F6C500; 
     }
