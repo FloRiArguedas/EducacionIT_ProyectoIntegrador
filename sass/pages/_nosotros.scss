@@ -5,7 +5,19 @@ body {
 @media (min-width: 576px) {
     
     .Head-section{
-        margin-top: 2rem;
+        // margin-top: 1rem;
+        // position: fixed;
+        h1{
+            font-weight: 300;
+            margin-bottom: 2rem;
+            color: #6405c2;
+            box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+        }
+
     }
 
   .Info-section {
@@ -14,6 +26,39 @@ body {
     padding-right: 5rem;
     margin-top: 2rem;
 
+    p{
+        margin-bottom: 1rem;
+        font-weight: 300;
+    }
+    .History_section{
+        margin-top: 3rem;
+        box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+        border-radius: 0.8rem;
+        padding-bottom: 1rem;
+        
+        p{  
+            padding-left: 1rem;
+            padding-right: 1rem;
+            font-weight: 100;
+        }
+
+        h3{
+            padding-bottom: 2rem;
+            font-weight: 200;
+        }
+        
+        &__tittle{
+            margin-bottom: 2rem;
+            background-color: #f6c500;
+            font-weight: 200;
+            font-size: xx-large;
+            border-top-left-radius: 0.8rem;
+            border-top-right-radius: 0.8rem;
+            color: white;
+        }
+    }
+    
+
     &__cardsMV{
         display: flex;
         justify-content: center;
@@ -21,11 +66,11 @@ body {
 
     &__Mision,
     &__Vision {
-      width: 230px;
-      max-width: 250px;
+      width: 280px;
+      max-width: 300px;
       height: 200px;
       background-color: #6405c2;
-      margin: 4rem 6rem 3rem 6rem;
+      margin: 4rem 4rem 3rem 4rem;
       color: aliceblue;
       padding-bottom: 0.5rem;
       padding-left: 0.5rem;
@@ -39,6 +84,10 @@ body {
         padding-top: 0.3rem;
         padding-bottom: 1rem;
         font-size: x-large;
+        font-weight: 300;
+      }
+      p{
+        font-weight: 100;
       }
     }
   }
