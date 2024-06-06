@@ -32,7 +32,7 @@ body {
     }
     .History_section{
         margin-top: 3rem;
-        box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+        box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
         border-radius: 0.8rem;
         padding-bottom: 1rem;
         
@@ -60,8 +60,9 @@ body {
     
 
     &__cardsMV{
-        display: flex;
-        justify-content: center;
+        //! ESTO SERÍA PARA EL MAX-WIDTH
+        // display: flex;
+        // justify-content: center;
     }
 
     &__Mision,
