@@ -1,0 +1,49 @@
+body {
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+    
+    .Head-section{
+        margin-top: 2rem;
+    }
+
+  .Info-section {
+    text-align: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-top: 2rem;
+
+    &__cardsMV{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__Mision,
+    &__Vision {
+      width: 230px;
+      max-width: 250px;
+      height: 200px;
+      background-color: #6405c2;
+      margin: 4rem 6rem 3rem 6rem;
+      color: aliceblue;
+      padding-bottom: 0.5rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      border-radius: 5px;
+      //   border: 3px solid salmon;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+      transition: clip-path 0.8s;
+      h2 {
+        color: #f6c500;
+        padding-top: 0.3rem;
+        padding-bottom: 1rem;
+        font-size: x-large;
+      }
+    }
+  }
+}
+
+/* 6405c2 */
+
+/* f6c500 */
