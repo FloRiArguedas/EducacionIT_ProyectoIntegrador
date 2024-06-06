@@ -1,6 +1,6 @@
 @media (min-width: 576px) {
   .card {
-    width: 220px;
+    width: 200px;
     max-width: 300px;
     height: 370px;
     background-color: white;
@@ -56,7 +56,7 @@
     }
 
     &__image-container {
-      height: 200px;
+      height: 180px;
       overflow: hidden;
       clip-path: polygon(
         0 0,
@@ -91,13 +91,13 @@
     & &__image-container {
       /* .card .card__image-container */
       width: 40%;
-      /* clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%); */ /* Estado Inicial */
+      //clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);  /* Estado Inicial */
     }
 
     &:hover &__image-container,
     &:focus &__image-container {
       width: 40%;
-      /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */ /* Estado final */
+       //clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);  /* Estado final */
     }
   }
 }
@@ -111,3 +111,5 @@
     text-align: center;
   }
 }
+
+//! REVISAR PORQUE YA NO LOGRO VER EL POLIGONO
