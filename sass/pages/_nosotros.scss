@@ -18,7 +18,7 @@ body {
             padding-top: 1rem;
         }
 
-    }
+    }  /* FIN HEAD SECTION */
 
   .Info-section {
     text-align: center;
@@ -91,9 +91,36 @@ body {
         font-weight: 100;
       }
     }
-  }
+  } /* FIN INFO SECTION */
+
+  .Section-counter{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    h3{
+      margin-top: 2rem;
+      color: #6405c2;
+      font-size: 4rem;
+      height: 5rem;
+      border: 1px solid yellowgreen;
+      font-family: fantasy;
+    }
+    p{
+      margin-top: 1rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
+      // border: 1px solid yellowgreen;
+      max-width: 200px;
+      text-align: center;
+      font-weight: 100;
+    }
+
+  } /* FIN COUNTER SECTION */
 }
 
 /* 6405c2 */
 
 /* f6c500 */
+
+
+/* FOOTER BACK BLACK COLOR WHITE LETTERS A LITTLE BIT PADDING AND ADD COPYRIGHT SYMBOL | METER UNA IMAGEN ARRIBA*/
