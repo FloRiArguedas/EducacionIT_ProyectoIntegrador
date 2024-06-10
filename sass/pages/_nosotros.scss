@@ -101,21 +101,28 @@ body {
 
   .Section-counter {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
+    justify-content: center;
+    &__Numbers{
+
+      margin-right: 8rem;
+      margin-left: 8rem;
+      height: auto;
+      width: auto;
+    }
     h3 {
       margin-top: 2rem;
       color: #6405c2;
       font-size: 4rem;
       height: 5rem;
-      border: 1px solid yellowgreen;
       font-family: fantasy;
     }
     p {
       margin-top: 1rem;
       margin-left: 3rem;
       margin-right: 3rem;
-      // border: 1px solid yellowgreen;
+      
       max-width: 200px;
       text-align: center;
       font-weight: 100;
@@ -226,6 +233,12 @@ body {
       width: auto;
     }
   }
+
+  .Section-counter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;}
 
 
 
