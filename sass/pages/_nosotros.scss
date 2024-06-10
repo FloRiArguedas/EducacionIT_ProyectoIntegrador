@@ -64,24 +64,24 @@ body {
     }
 
     &__cardsMV {
-      //! ESTO SERÍA PARA EL MAX-WIDTH
-      // display: flex;
-      // justify-content: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      text-align: center;
     }
 
     &__Mision,
     &__Vision {
-      width: 280px;
-      max-width: 300px;
-      height: 200px;
+      width: auto;
+      max-width: 400px;
+      height: auto;
       background-color: #6405c2;
       margin: 4rem 4rem 3rem 4rem;
       color: aliceblue;
       padding-bottom: 0.5rem;
       padding-left: 0.5rem;
       padding-right: 0.5rem;
-      border-radius: 5px;
-      //   border: 3px solid salmon;
+      border-radius: 5px; 
       box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
       transition: clip-path 0.8s;
       h2 {
@@ -208,6 +208,27 @@ body {
     padding-bottom: 1rem;
     padding-top: 1rem;
   }
+}
+
+
+/* --------------------- DESKTOP -------------------- */
+
+@media (max-width: 768px) {
+
+  .Info-section__cardsMV{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &__Mision,
+    &__Vision {
+      height: auto;
+      width: auto;
+    }
+  }
+
+
+
 }
 
 /* 6405c2 */
