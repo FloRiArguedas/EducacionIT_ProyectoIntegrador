@@ -30,6 +30,7 @@
     text-align: center;
 
     &__Form-contact {
+      border: 2px solid #f6c500;
       box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
       background-color: #faf9f6;
       color: #6405c2;
@@ -122,6 +123,90 @@
   }
 
   //? MEDIOS DE COMUNICACION
+
+  .bloque-MediosyRedes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10rem;
+    margin: 2rem 3rem 3rem 3rem;
+
+    h2{
+        color: #6405c2;
+        font-weight: 300;
+    }
+
+    &__MediosComunicacion {
+      margin: 3rem 2rem 5rem 2rem;
+      display: flex;
+      flex-direction: row;
+
+      .whatsapp {
+        margin-bottom: 1rem;
+      }
+      .email {
+        margin-bottom: 1rem;
+      }
+
+      i {
+        display: block;
+        font-weight: 300;
+      }
+
+      .fa-solid,{
+        font-size: 5rem;
+        color: #f6c500;
+      }
+
+      .fa-brands,fa-whatsapp{
+        font-size: 5rem;
+        color: #f6c500;
+      }
+
+      a {
+        display: block;
+        color: orangered;
+        padding-top: 0.5rem;
+        font-weight: 300;
+      }
+    }
+
+    &__RedesSociales {
+      margin: 3rem 2rem 5rem 2rem;
+      display: flex;
+      flex-direction: row;
+
+      i {
+        display: block;
+        font-weight: 300;
+      }
+
+      .fa-brands{
+        font-size: 5rem;
+        color: #f6c500;
+      }
+
+      a {
+        display: block;
+        color: orangered;
+        padding-top: 0.5rem;
+        font-weight: 300;
+      }
+    }
+
+    &__grupo-canal {
+      border-radius: 1rem;
+      width: 15rem;
+      margin: 2rem 2rem 2rem 2rem;
+      background-color: #6405c2;
+      color: #faf9f6;
+      height: 10rem;
+      font-weight: 100;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
 
   //? REDES SOCIALES
 } // FIN MEDIA 576
