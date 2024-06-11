@@ -1,62 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <title>Contáctenos</title>
-</head>
-<body>
-    <h1>Contacta a 3D4U</h1>
+  </head>
+  <body>
+    <header class="main-header">
+      <input type="checkbox" id="menu" />
 
-    <p>¿Tienes una figura en mente? Cuéntanos los detalles y haremos tu deseo realidad.</p>
+      <nav class="nav-bar">
+        <ul class="nav-bar__nav-list">
+          <li class="nav-bar__nav-item">
+            <a href="#" class="nav-bar__nav-link">Inicio</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="#" class="nav-bar__nav-link">Alta</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="views/nosotros.html" class="nav-bar__nav-link">Nosotros</a>
+          </li>
+          <li class="nav-bar__nav-item">
+            <a href="views/contacto.html" class="nav-bar__nav-link">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- .nav-bar -->
 
-    <hr>
+      <div class="search-bar">
+        <div class="search-bar__logo-container">
+          <img
+            class="search-bar__logo3d4u"
+            src="/img/Logo3D4UOriginal.webp"
+            alt="Logo 3D4U Orginal Morado con Amarillo"
+          />
+        </div>
+        <form action="#" class="search-bar__form-container">
+          <label for="busqueda" class="search-bar__form-label"
+            >Buscar Figuras</label
+          >
+          <input type="search" class="search-bar__form-search" id="busqueda" />
+          <input type="submit" class="search-bar__form-submit" value="Buscar" />
+        </form>
+        <div class="search-bar__carrito-container">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="menu-toogle">
+          <label for="menu" class="menu-toogle__label">
+            <span class="menu-toogle__top-bread"></span>
+            <span class="menu-toogle__meat"></span>
+            <span class="menu-toogle__bottom-bread"></span>
+          </label>
+        </div>
+      </div>
+      <!-- .search-bar -->
+    </header>
+    <!-- main -header -->
+
+    <div class="head">
+      <h1>Contacta a 3D4U</h1>
+      <p>
+        ¿Tienes una figura en mente? Cuéntanos los detalles y haremos tu deseo
+        realidad.
+      </p>
+    </div>
 
     <!-- FORMULARIO DE CONTACTO -->
-    <div class="Form-contact">
+    <div class="Form-Container">
+      <div class="Form-Container__Form-contact">
         <form>
+          <div class="Form-Container__Form-contact__grupo">
             <label for="label-nombre">Nombre: * </label>
-            <input type="text" name="nombre" id="label-nombre" placeholder="Eje: Floricela" required>
+            <input
+              type="text"
+              name="nombre"
+              id="label-nombre"
+              placeholder="Eje: Floricela"
+              required
+            />
+          </div>
 
+          <div class="Form-Container__Form-contact__grupo">
             <label for="label-apellido">Apellido: </label>
-            <input type="text" name="apellido" id="label-apellido" placeholder="Eje: Arguedas">
+            <input
+              type="text"
+              name="apellido"
+              id="label-apellido"
+              placeholder="Eje: Arguedas"
+            />
+          </div>
 
+          <div class="Form-Container__Form-contact__grupo">
             <label for="label-email">Correo Electrónico: * </label>
-            <input type="email" name="email" id="label-email" placeholder="Eje: 3d4u.servicioalcliente@gmail.com" required>
+            <input
+              type="email"
+              name="email"
+              id="label-email"
+              placeholder="Eje: 3d4u.servicioalcliente@gmail.com"
+              required
+            />
+          </div>
 
+          <div class="Form-Container__Form-contact__grupo">
             <label for="label-numero">Número de teléfono: </label>
-            <input type="number" name="numero" id="label-numero">
+            <input type="tel" name="numero" id="label-numero" />
+          </div>
 
-            <label for="label-descripcion">Cuéntanos los detalles: * </label>
-            <textarea name="detalles" id="label-descripcion" cols="20" rows="10" placeholder="Describa aquí lo que desea en su pedido"></textarea>
+          <div class="Form-Container__Form-contact__grupo">
+            <div id="description">
+              <label for="label-descripcion">Cuéntanos los detalles: * </label>
+              <textarea
+                name="detalles"
+                id="label-descripcion"
+                cols="20"
+                rows="10"
+                placeholder="Describa aquí lo que desea en su pedido"
+              ></textarea>
+            </div>
+          </div>
 
-            <button id="boton-enviarform">Enviar Solicitud</button>
-
-            <p>* Campos requeridos</p>
+          <div class="Form-Container__Form-contact__grupo">
+            <div class="campo_requerido_container">
+              <p id="requiered">* Campos requeridos</p>
+            </div>
+            <div class="button">
+              <button id="boton_form">Enviar Solicitud</button>
+            </div>
+          </div>
         </form>
+      </div>
     </div>
 
     <!-- Medios de Comunicacion -->
 
     <div class="bloque-mediosComunicacion">
+      <h2>Contáctanos en nuestros medios de comunicación</h2>
 
-        <h2>Contáctanos en nuestros medios de comunicación</h2>
+      <p class="whatsapp">
+        <i class="fa-brands fa-whatsapp"></i> Escríbenos a nuestro
+        <a href="https://wa.me/50670128588" target="_blank"> <i>WhatsApp</i></a>
+      </p>
 
-        <p class="whatsapp"><i class="fa-brands fa-whatsapp"></i> Escríbenos a nuestro <a href="https://wa.me/50670128588" target="_blank"> <i>WhatsApp</i></a></p>
+      <p class="email">
+        <i class="fa-solid fa-envelope"></i> Escríbenos a nuestro Correo
+        Electrónico:<a
+          href="mailto:3d4u.servicioalcliente@gmail.com"
+          target="_blank"
+        >
+          <i>Click aquí</i></a
+        >
+      </p>
 
-        <p class="email"><i class="fa-solid fa-envelope"></i> Escríbenos a nuestro Correo Electrónico:<a href="mailto:3d4u.servicioalcliente@gmail.com" target="_blank"> <i>Click aquí</i></a></p>
+      <h2>Siguenos en nuestras Redes Sociales</h2>
 
-        <h2>Siguenos en nuestras Redes Sociales</h2>
-
-        <p class="instagram"><i class="fa-brands fa-instagram"> Instagram: <a href="https://www.instagram.com/3d4u.cr/?igsh=OWdnOWltNno5bDR3" target="_blank"> @3D4U.cr</a></i></p>
-        <p class="tiktok"><i class="fa-brands fa-tiktok"> Tik Tok: <a href="https://www.tiktok.com/@3d4u.cr" target="_blank"> @3D4U.cr</a></i></p>
-
+      <p class="instagram">
+        <i class="fa-brands fa-instagram">
+          Instagram:
+          <a
+            href="https://www.instagram.com/3d4u.cr/?igsh=OWdnOWltNno5bDR3"
+            target="_blank"
+          >
+            @3D4U.cr</a
+          ></i
+        >
+      </p>
+      <p class="tiktok">
+        <i class="fa-brands fa-tiktok">
+          Tik Tok:
+          <a href="https://www.tiktok.com/@3d4u.cr" target="_blank">
+            @3D4U.cr</a
+          ></i
+        >
+      </p>
     </div>
 
     <footer class="footer">
-        <p>Creado en 2024 | © Derechos Reservados © | 3D4U Heredia, Costa Rica</p>
-      </footer>
-    
-</body>
+      <p>Creado en 2024 | © Derechos Reservados © | 3D4U Heredia, Costa Rica</p>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+  </body>
 </html>
