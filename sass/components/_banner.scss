@@ -27,3 +27,12 @@
   z-index: 1; //Lo coloco por encima de la imagen en el eje Z
 //   border: 10px solid seagreen;
 }
+
+@media (max-width: 768px){
+
+    .Banner-Container{
+        &__usImage{
+            object-position: 70% 20%; //Cambio posición imagen de fondo para mobile
+        }
+    }
+}
