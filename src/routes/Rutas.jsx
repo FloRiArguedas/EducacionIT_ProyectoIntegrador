@@ -17,7 +17,7 @@ const Rutas = () => {
             element: <Alta />
         },
         { 
-            ath: "/nosotros",
+            path: "/nosotros",
             element: <Nosotros />
         },
         {
