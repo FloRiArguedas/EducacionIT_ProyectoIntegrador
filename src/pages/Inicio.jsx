@@ -1,7 +1,11 @@
 import Card from "../components/Card";
+import useTitulo from "../hooks/useTitulo";
 import "./Inicio.scss";
 
 const Inicio = () => {
+
+  useTitulo('Inicio')
+  
   return (
     <main>
       <div className="Banner-Container-fixed">
