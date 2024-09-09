@@ -1,6 +1,16 @@
+import { useContext } from 'react'
 import './TablaFila.scss'
+import ProductosContext from '../context/ProductosContext'
 
 const TablaFila = ({producto}) => {
+
+  const {setProductoaEditar} = useContext(ProductosContext)
+
+  const handleEditar = (producto) => {
+    console.log('Producto a Editar...', producto.id)
+    setProductoaEditar(producto)
+  }
+
   return (
    <tr>
     <td>{producto.nombre}</td>
@@ -9,7 +19,7 @@ const TablaFila = ({producto}) => {
       <img className="img-row" src={producto.imagen} alt={producto.nombre} />
     </td>
     <td>
-      <button>Editar</button>
+      <button onClick={() => handleEditar(producto)}>Editar</button>
       <button>Borrar</button>
     </td>
    </tr>

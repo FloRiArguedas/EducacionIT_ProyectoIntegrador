@@ -11,6 +11,8 @@ const ProductosProvider = ({children}) => {
 
     const [productos, setProductos] = useState(null)
 
+    const [productoaEditar, setProductoaEditar]  = useState(null)
+
     useEffect (() => {
         getAllProducts()
     }, [])
@@ -28,14 +30,48 @@ const ProductosProvider = ({children}) => {
         }
     }
 
-    const crearProductoContext = (nuevoProducto) => {
-        console.log(nuevoProducto)
+    const crearProductoContext = async (nuevoProducto) => {
+       
+        try {
 
+            console.log(nuevoProducto)
+
+            const options = {
+                method: 'POST',
+                headers: { 'content-type' : 'application/json'},
+                body: JSON.stringify(nuevoProducto)
+            }
+    
+    
+            const newProduct = await helperPeticionesHttp (url, options)
+    
+            setProductos([...productos, newProduct])
+            
+        } catch (error) {
+            console.error('CrearProductoContexto', error)
+        }
+
+    }
+
+
+    const actualizarProductoContext = async (ProductoEditado) => {
+
+        try {
+
+
+            
+        } catch (error) {
+            console.error('ActualizarProductoContexto', error)
+        }
     }
 
     const data = {
         productos,
-        crearProductoContext
+        crearProductoContext,
+        actualizarProductoContext,
+        productoaEditar,
+        setProductoaEditar
+
     }
     return <ProductosContext.Provider value={data}>{children}</ProductosContext.Provider>
 }

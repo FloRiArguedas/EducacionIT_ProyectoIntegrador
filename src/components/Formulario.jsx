@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import ProductosContext from "../context/ProductosContext";
 
 const Formulario = () => {
@@ -11,22 +11,30 @@ const Formulario = () => {
 
   const [form, setForm] = useState(formInit);
 
-  const {crearProductoContext} = useContext(ProductosContext)
+  const {crearProductoContext, actualizarProductoContext, productoaEditar} = useContext(ProductosContext)
 
-  const handleSubmit = (e) => {
+  useEffect (() => {
+    productoaEditar ? setForm(productoaEditar) : setForm (formInit)
+  }, [productoaEditar])
+  
+
+  const handleSubmit =  async (e) => {
     e.preventDefault();
     console.log("HandleSubmit")
 
     try {
       if (form.id === null) {
         console.log('Creando Producto')
-        crearProductoContext(form)
+        await crearProductoContext(form)
       } else {
         console.log('Actualizando Producto')
+        await actualizarProductoContext(form)
       }
       handleReset()
 
-    } catch (error) {}
+    } catch (error) {
+      console.error('[handleSubmit]', error)
+    }
   };
 
   const handleChange = (e) => {
@@ -34,7 +42,7 @@ const Formulario = () => {
     const { type, name, value } = e.target;
     setForm({
       ...form,
-     //[name] : type === 'checkbox' ? checked : value
+     [name] : type === 'checkbox' ? checked : value
     })
   };
 
@@ -69,11 +77,11 @@ const Formulario = () => {
           />
         </div>
         <div>
-          <label htmlFor="lbl-foto">Foto</label>
+          <label htmlFor="lbl-imagen">Foto</label>
           <input
             type="text"
-            name="foto"
-            id="lbl-foto"
+            name="imagen"
+            id="lbl-imagen"
             value={form.imagen}
             onChange={handleChange}
           />
