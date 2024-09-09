@@ -1,8 +1,11 @@
 import { createContext } from "react"
+import { useLocalStorage } from "../hooks/useLocalStorage"
 
 const CarritoContext = createContext()
 
 const CarritoProvider = ({children}) => {
+
+    const [ agregarAlCarrito, EliminarDelCarrito, limpiarCarrito, carrito] = useLocalStorage('carrito', [])
 
     const agregarProductCarritoContext = async (producto) => {
                 
@@ -13,6 +16,7 @@ const CarritoProvider = ({children}) => {
     }
 
     const data = {
+        carrito,
         agregarProductCarritoContext,
         EliminarProductCarritoContext
 
