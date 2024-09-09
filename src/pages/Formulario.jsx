@@ -1,12 +1,9 @@
-import useTitulo from "../hooks/useTitulo"
+import useTitulo from "../hooks/useTitulo";
 
 const Formulario = () => {
+  useTitulo("Formulario");
 
-  useTitulo('Formulario')
-  
-  return (
-    <div>Formulario</div>
-  )
-}
+  return <h1>Formulario</h1>;
+};
 
-export default Formulario
+export default Formulario;

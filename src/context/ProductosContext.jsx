@@ -28,8 +28,14 @@ const ProductosProvider = ({children}) => {
         }
     }
 
+    const crearProductoContext = (nuevoProducto) => {
+        console.log(nuevoProducto)
+
+    }
+
     const data = {
-        productos
+        productos,
+        crearProductoContext
     }
     return <ProductosContext.Provider value={data}>{children}</ProductosContext.Provider>
 }
