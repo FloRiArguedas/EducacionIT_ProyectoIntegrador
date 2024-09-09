@@ -19,7 +19,9 @@ const ProductosProvider = ({children}) => {
 
         try {
 
-            const prods = await helperPeticionesHttp(url, null)
+            const prods = await helperPeticionesHttp(url, {})
+
+            setProductos(prods)
 
         } catch (error) {
             console.error('[getAllProducts]', error)
@@ -27,7 +29,7 @@ const ProductosProvider = ({children}) => {
     }
 
     const data = {
-
+        productos
     }
     return <ProductosContext.Provider value={data}>{children}</ProductosContext.Provider>
 }

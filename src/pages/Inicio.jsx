@@ -1,11 +1,15 @@
-import Card from "../components/Card";
-import useTitulo from "../hooks/useTitulo";
+import { useContext } from "react";
+
 import "./Inicio.scss";
+import Card from "../components/Card";
+import ProductosContext from "../context/ProductosContext";
+import useTitulo from "../hooks/useTitulo";
 
 const Inicio = () => {
+  const { productos } = useContext(ProductosContext);
 
-  useTitulo('Inicio')
-  
+  useTitulo("Inicio");
+
   return (
     <main>
       <div className="Banner-Container-fixed">
@@ -23,9 +27,13 @@ const Inicio = () => {
         </header>
 
         <div className="cards-container" id="cardsContainer">
-
-          <Card />
-        
+          
+          {
+            productos && productos.map((producto) =>(
+              <Card key={producto.id}  producto= {producto}/>
+            ))
+          }
+          
         </div>
       </section>
     </main>
