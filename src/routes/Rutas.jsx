@@ -4,6 +4,7 @@ import Inicio from "../pages/Inicio";
 import Alta from "../pages/Alta";
 import Nosotros from "../pages/Nosotros";
 import Contacto from "../pages/Contacto";
+import Carrito from "../pages/Carrito";
 
 const Rutas = () => {
   const routes = useRoutes(
@@ -23,6 +24,10 @@ const Rutas = () => {
         {
             path: "/contacto",
             element: <Contacto />
+        },
+        {
+            path: "/carrito",
+            element: <Carrito />
         },
         {
             path: "*",

@@ -1,7 +1,13 @@
 import './Card.scss'
 
 const Card = ({producto}) => {
-  console.log(producto)
+
+  const handleAgregar = (producto) => {
+    console.log(producto)
+    //agregarProductCarritoContext(producto)
+  }
+
+
   return (
     <div className="card">
       <article className="card__article">
@@ -12,6 +18,7 @@ const Card = ({producto}) => {
           <h2 className="card__heading"> {producto.nombre}  </h2>
           <div className="card__description">
             <p>"{producto.descripcion}"</p>
+            <button onClick={() => handleAgregar(producto)}>Agregar al Carrito</button>
           </div>
         </div>
       </article>

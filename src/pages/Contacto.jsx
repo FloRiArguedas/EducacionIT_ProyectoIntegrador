@@ -5,7 +5,10 @@ const Contacto = () => {
   useTitulo('Contacto')
   
   return (
-    <div>Contacto</div>
+   <>
+    <h1>Figuras en el carrito</h1>
+    <hr />
+   </>
   )
 }
 
