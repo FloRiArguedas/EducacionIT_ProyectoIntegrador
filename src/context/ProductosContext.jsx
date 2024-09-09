@@ -58,7 +58,18 @@ const ProductosProvider = ({children}) => {
 
         try {
 
+            const options = {
+                method: 'PUT',
+                headers: { 'content-type' : 'application/json'},
+                body: JSON.stringify(ProductoEditado)
+            }
 
+            const UrlEdicion = url +  ProductoEditado.id
+
+            const EditedProduct = await helperPeticionesHttp (UrlEdicion, options)
+
+            const nuevoEstadoProductos = productos.map ( producto => producto.id === ProductoEditado.id ? ProductoEditado : producto)
+            setProductos(nuevoEstadoProductos)
             
         } catch (error) {
             console.error('ActualizarProductoContexto', error)
