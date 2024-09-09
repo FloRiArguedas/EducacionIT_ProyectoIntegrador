@@ -77,6 +77,24 @@
       "nombre": "Coco",
       "descripcion": "Coco de la película 17cm",
       "imagen": "img/coco.jpg"
+    },
+    {
+      "id": 14,
+      "nombre": "",
+      "descripcion": "",
+      "imagen": ""
+    },
+    {
+      "id": 15,
+      "nombre": "",
+      "descripcion": "",
+      "imagen": ""
+    },
+    {
+      "id": 16,
+      "nombre": "",
+      "descripcion": "",
+      "imagen": ""
     }
   ]
 }

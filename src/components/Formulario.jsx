@@ -11,7 +11,7 @@ const Formulario = () => {
 
   const [form, setForm] = useState(formInit);
 
-  const {crearProductoContext, actualizarProductoContext, productoaEditar} = useContext(ProductosContext)
+  const {crearProductoContext, actualizarProductoContext, productoaEditar, setProductoaEditar} = useContext(ProductosContext)
 
   useEffect (() => {
     productoaEditar ? setForm(productoaEditar) : setForm (formInit)
@@ -49,6 +49,8 @@ const Formulario = () => {
 
   const handleReset = () => {
     console.log('Limpiando')
+    setForm(formInit)
+    setProductoaEditar(null)
   };
 
   return (
