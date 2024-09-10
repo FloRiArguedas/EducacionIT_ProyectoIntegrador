@@ -31,10 +31,14 @@ const CarritoProvider = ({children}) => {
     }
 
     const EliminarProductDelCarritoContext =  (id) => {
-                
+        EliminarDelCarrito(id)
     }
 
-    const guardarCarritoContext = async () => {
+    const limpiarCarritoContext = () => {
+        limpiarCarrito()
+    }
+
+    const guardarCarritoContext =  () => {
 
     }
     
@@ -42,7 +46,8 @@ const CarritoProvider = ({children}) => {
         carrito,
         agregarProductCarritoContext,
         EliminarProductDelCarritoContext,
-        guardarCarritoContext
+        guardarCarritoContext,
+        limpiarCarritoContext
     }
 
     return <CarritoContext.Provider value={data}>{children}</CarritoContext.Provider>
