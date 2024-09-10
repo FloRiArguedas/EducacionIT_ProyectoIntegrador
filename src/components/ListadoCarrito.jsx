@@ -6,10 +6,11 @@ import CarritoContext from "../context/CarritoContext";
 
 const ListadoCarrito = () => {
 
-  const { carrito, limpiarCarritoContext } = useContext(CarritoContext);
+  const { carrito, limpiarCarritoContext,guardarCarritoContext } = useContext(CarritoContext);
 
   const handleComprar = () => {
-
+    console.log('Comprando')
+    guardarCarritoContext()
   }
 
   const handleLimpiarCarrito = () => {
@@ -43,7 +44,7 @@ const ListadoCarrito = () => {
       {!carrito.length <= 0 && (
         <>
           <button onClick={handleLimpiarCarrito} className="bttnListado">VACIAR</button>
-          <button className="bttnListado">COMPRAR</button>
+          <button onClick={handleComprar}className="bttnListado">COMPRAR</button>
         </>
       )}
     </>

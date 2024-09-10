@@ -39,7 +39,7 @@ const CarritoProvider = ({children}) => {
     }
 
     const guardarCarritoContext =  () => {
-
+        console.log(carrito)
     }
     
     const data = {
