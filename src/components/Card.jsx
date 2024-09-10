@@ -1,10 +1,14 @@
+import { useContext } from 'react'
+import CarritoContext from '../context/CarritoContext'
 import './Card.scss'
 
 const Card = ({producto}) => {
 
+  const {agregarProductCarritoContext} = useContext(CarritoContext)
+
   const handleAgregar = (producto) => {
-    console.log(producto)
-    //agregarProductCarritoContext(producto)
+    console.log('Agregando al carrito')
+    agregarProductCarritoContext(producto)
   }
 
 

@@ -7,24 +7,47 @@ const CarritoProvider = ({children}) => {
 
     const [ agregarAlCarrito, EliminarDelCarrito, limpiarCarrito, carrito] = useLocalStorage('carrito', [])
 
-    const agregarProductCarritoContext = async (producto) => {
+
+    function EstaelProductoEnCarrito (producto) {
+        const arrayProductsCarrito = carrito.filter(prod => prod.id === producto.id)
+        return arrayProductsCarrito.length
+    }
+
+    function obtenerProductoDeCarrito (producto) {
+        return carrito.find(prod => prod.id === producto.id)
+    }
+
+    const agregarProductCarritoContext =  (producto) => {
+        
+        if (!EstaelProductoEnCarrito(producto)) {
+            producto.cantidad = 1
+            agregarAlCarrito(producto)
+        } else {
+            const productoDeCarrito = obtenerProductoDeCarrito(producto)
+            console.log(productoDeCarrito)
+            productoDeCarrito.cantidad++
+            window.localStorage.setItem( 'carrito' , JSON.stringify(carrito))
+        }
+    }
+
+    const EliminarProductCarritoContext =  (id) => {
                 
     }
 
-    const EliminarProductCarritoContext = async (id) => {
-                
-    }
+    const guardarCarritoContext = async () => {
 
+    }
+    
     const data = {
         carrito,
         agregarProductCarritoContext,
-        EliminarProductCarritoContext
-
+        EliminarProductCarritoContext,
+        guardarCarritoContext
     }
 
     return <CarritoContext.Provider value={data}>{children}</CarritoContext.Provider>
 }
 
-export {CarritoContext}
+export { CarritoProvider }
 
-export default CarritoProvider
+export default CarritoContext

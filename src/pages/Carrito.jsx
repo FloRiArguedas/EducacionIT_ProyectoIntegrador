@@ -1,11 +1,17 @@
+import { useContext } from "react"
 import useTitulo from "../hooks/useTitulo"
+import CarritoContext from "../context/CarritoContext"
 
 const Carrito = () => {
 
   useTitulo('Carrito')
+  const {carrito, eliminarCarrito, guardarCarritoContext} = useContext(CarritoContext)
 
   return (
-    <div>Carrito</div>
+    <>
+    <h1>Productos en el Carrito</h1>
+    <hr />
+    </>
   )
 }
 
