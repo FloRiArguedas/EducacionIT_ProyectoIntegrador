@@ -1,16 +1,16 @@
+import './ListadoCarrito.scss'
 import React, { useContext } from "react";
 import ItemCarrito from "./ItemCarrito";
 import CarritoContext from "../context/CarritoContext";
-
 const ListadoCarrito = () => {
   const { carrito, eliminarCarrito, guardarCarritoContext } =
     useContext(CarritoContext);
 
   return (
-    <table>
+    <table className="tabla-carrito">
       <thead>
         <tr>
-          <th>Imagen</th>
+          <th>Figura</th>
           <th>Nombre</th>
           <th>Cantidad</th>
         </tr>

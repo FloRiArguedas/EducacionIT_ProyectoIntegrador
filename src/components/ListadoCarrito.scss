@@ -1,0 +1,12 @@
+table.tabla-carrito {
+    border-collapse: collapse;
+    width: 95%;
+    margin-top: 3rem;
+    margin-left: 1rem;
+
+    th,td {
+        border: 5px solid #6405c2;
+        padding: 2rem;
+        text-align: center;
+    }
+}

@@ -1,3 +1,4 @@
+import './ItemCarrito.scss'
 import React, { useContext } from 'react'
 import CarritoContext from '../context/CarritoContext'
 
@@ -10,10 +11,9 @@ const ItemCarrito = ({producto}) => {
     }
 
   return (
-    //<h1>Productos en el carrito</h1>
       <tr>
          <td>
-             <img src={producto.imagen} alt={producto.nombre} width="50px" />
+             <img src={producto.imagen} alt={producto.nombre} className = "imgCarrito"/>
          </td>
          <td>{producto.nombre}</td>
          <td>{producto.cantidad}</td>
