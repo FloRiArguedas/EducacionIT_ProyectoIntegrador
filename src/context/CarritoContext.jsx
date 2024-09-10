@@ -30,7 +30,7 @@ const CarritoProvider = ({children}) => {
         }
     }
 
-    const EliminarProductCarritoContext =  (id) => {
+    const EliminarProductDelCarritoContext =  (id) => {
                 
     }
 
@@ -41,7 +41,7 @@ const CarritoProvider = ({children}) => {
     const data = {
         carrito,
         agregarProductCarritoContext,
-        EliminarProductCarritoContext,
+        EliminarProductDelCarritoContext,
         guardarCarritoContext
     }
 
