@@ -1,8 +1,5 @@
-# React + Vite
+# INTEGRADOR ETAPA 3 FLORICELA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Link  a Netlify: https://floricelaarguedasintegradoretapa3.netlify.app/
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Git: https://github.com/FloRiArguedas/EducacionIT_ProyectoIntegrador/tree/etapa3
