@@ -1,3 +1,4 @@
+import './Formulario.scss'
 import { useContext, useEffect, useState } from "react";
 import ProductosContext from "../context/ProductosContext";
 
@@ -59,7 +60,7 @@ const Formulario = () => {
 
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="lbl-nombre">Nombre</label>
+          <label className='lbl_form' htmlFor="lbl-nombre">Nombre:</label>
           <input
             type="text"
             name="nombre"
@@ -69,7 +70,7 @@ const Formulario = () => {
           />
         </div>
         <div>
-          <label htmlFor="lbl-descripcion">Descripcion</label>
+          <label className='lbl_form' htmlFor="lbl-descripcion">Descripcion:</label>
           <input
             type="text"
             name="descripcion"
@@ -79,7 +80,7 @@ const Formulario = () => {
           />
         </div>
         <div>
-          <label htmlFor="lbl-imagen">Foto</label>
+          <label className='lbl_form' htmlFor="lbl-imagen">Foto:</label>
           <input
             type="text"
             name="imagen"
