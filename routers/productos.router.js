@@ -3,17 +3,41 @@ const routerProductos = express.Router()
 
 //? GET ALL
 
-routerProductos.get('/api/v1/productos',(req,res)=> {
+routerProductos.get('/',(req,res)=> {
     res.send('Ok -> GET ALL (READ)')
 })
 
 //? GET ONE
 
+routerProductos.get('/:id',(req,res)=> {
+    const id = req.params.id
+    console.log(id)
+    res.send('Ok -> GET ONE (READ)')
+})
+
 //? POST
+
+routerProductos.post('/',(req,res)=> {
+    const producto =req.body
+    console.log(producto)
+    res.status(201).send('Ok -> POST (CREATE)')
+})
 
 //? PUT
 
+routerProductos.put('/',(req,res)=> {
+    const productoEditado =req.body
+    console.log(productoEditado)
+    res.send('Ok -> PUT (CREATE)')
+})
+
 //? DELETE
+
+routerProductos.delete('/:id',(req,res)=> {
+    const id = req.params.id
+    console.log(id)
+    res.send('Ok -> DELETE (DELETE)')
+})
 
 
 export default routerProductos

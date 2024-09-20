@@ -6,10 +6,13 @@ import routerProductos from './routers/productos.router.js'
 const app = express()
 const PORT = process.env.PORT || 2222
 
+//MIDDLEWARE
+app.use(express.json())
+
 
 //RUTAS
 
-app.use('/',routerProductos)
+app.use('/api/v1/productos',routerProductos)
 
 
 app.get('/', (req, res) => {
