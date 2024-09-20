@@ -19,6 +19,17 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.listen(PORT, () => {
-  console.log(`Example app listening on PORT ${PORT}`)
+app.all('*',(req,res)=> {
+  res
+    .status(404)
+    .json({
+      ruta:  `${req.url}`,
+      metodo: `${req.method}`,
+      mensaje: 'Recurso no existente'
+    })
+})
+
+app.listen(PORT, (err) => {
+  if (err) throw new Error('No fue posible levantar el servidor', err)
+    console.log( `Servidor funcionando en : http://localhost:${PORT}`)
 })

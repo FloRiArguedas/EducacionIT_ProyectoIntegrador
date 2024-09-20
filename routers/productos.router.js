@@ -25,10 +25,12 @@ routerProductos.post('/',(req,res)=> {
 
 //? PUT
 
-routerProductos.put('/',(req,res)=> {
+routerProductos.put('/:id',(req,res)=> {
+    const id = req.params.id
+    console.log(id)
     const productoEditado =req.body
     console.log(productoEditado)
-    res.send('Ok -> PUT (CREATE)')
+    res.send('Ok -> PUT (UPDATE)')
 })
 
 //? DELETE
