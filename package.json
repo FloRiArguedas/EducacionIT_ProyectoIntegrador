@@ -1,11 +1,11 @@
 {
   "name": "bc-71370-integrador-etapa4",
   "version": "1.0.0",
-  "type" : "module",
+  "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev" : "nodemon server.js"
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
