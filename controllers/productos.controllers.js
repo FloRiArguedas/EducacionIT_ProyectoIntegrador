@@ -1,32 +1,62 @@
 
-const getAll = (req, res)=> {
+const getAll = async (req, res)=> {
+
+    try {
+        const productos =  await modelos.obtenerTodos()
+        res.send('OK -> GET ALL')
+
+    } catch (error) {
+        console.log( 'No fue posible extraer los productos', error)
+    } 
     res.send('Ok -> GET ALL (READ)')
 }
 
-const getOne = (req,res)=> {
+const getOne =  async (req,res)=> {
     const id = req.params.id
-    console.log(id)
-    res.send('Ok -> GET ONE (READ)')
+
+    try {
+        const producto =  await modelos.obtenerUno(id)
+        console.log(id)
+        res.send('Ok -> GET ONE (READ)')
+    } catch (error) {
+        console.log( 'No fue posible extraer el producto', error)
+    }
 }
 
-const create = (req,res)=> {
+const create = async (req,res)=> {
     const producto =req.body
-    console.log(producto)
-    res.status(201).send('Ok -> POST (CREATE)')
+
+    try {
+        const productoCreado = await modelos.CrearProducto(producto)
+        res.status(201).send('Ok -> POST (CREATE)')
+    } catch (error) {
+        console.log( 'No fue posible crear el producto', error)
+    }
 }
 
-const update = (req,res)=> {
+const update = async  (req,res)=> {
     const id = req.params.id
-    console.log(id)
     const productoEditado =req.body
-    console.log(productoEditado)
-    res.send('Ok -> PUT (UPDATE)')
+
+    try {
+        const ProductoActualizado = await modelos.actualizarProducto(id, productoEditado)
+        res.send('Ok -> PUT (UPDATE)')
+        
+    } catch (error) {
+        console.log( 'No fue posible actualizar el producto', error)
+    }
 }
 
-const remove = (req,res)=> {
+const remove = async (req,res)=> {
     const id = req.params.id
     console.log(id)
-    res.send('Ok -> DELETE (DELETE)')
+
+    try {
+        const productoBorrado = await modelos.deleteProducto(id)
+        res.send('Ok -> DELETE (DELETE)')
+    } catch (error) {
+        console.log( 'No fue posible eliminar el producto', error)
+    }
 }
 
 export default {
