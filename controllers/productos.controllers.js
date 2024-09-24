@@ -1,6 +1,6 @@
 import modelos from '../models/productos.models.js'
-const getAll = async (req, res)=> {
 
+const getAll = async (req, res)=> {
     try {
         const productos =  await modelos.obtenerTodos()
         res.send('OK -> GET ALL')
@@ -8,7 +8,6 @@ const getAll = async (req, res)=> {
     } catch (error) {
         console.log( 'No fue posible extraer los productos', error)
     } 
-    res.send('Ok -> GET ALL (READ)')
 }
 
 const getOne =  async (req,res)=> {
