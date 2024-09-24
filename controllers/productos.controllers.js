@@ -1,4 +1,4 @@
-
+import modelos from '../models/productos.models.js'
 const getAll = async (req, res)=> {
 
     try {
