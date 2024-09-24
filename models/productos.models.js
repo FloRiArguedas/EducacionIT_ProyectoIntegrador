@@ -7,13 +7,21 @@ const obtenerTodos = async () => {
 
     try {
         const productos = await ProductosModelo.find()
-        console.log(productos)
         return productos
     } catch (error) {
        console.log('Error al obtener los productos', error)
     }
 } 
-const obtenerUno =  () => {
+const obtenerUno = async (id) => {
+    try {
+        
+        const producto = await ProductosModelo.findById(id)
+        console.log(producto)
+        return producto
+
+    } catch (error) {
+        console.log('Error al obtener el producto', error)
+    }
  
 } 
 

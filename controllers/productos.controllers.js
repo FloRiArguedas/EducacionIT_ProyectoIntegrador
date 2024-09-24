@@ -3,7 +3,7 @@ import modelos from '../models/productos.models.js'
 const getAll = async (req, res)=> {
     try {
         const productos =  await modelos.obtenerTodos()
-        res.send('OK -> GET ALL')
+        res.json({productos})
 
     } catch (error) {
         console.log( 'No fue posible extraer los productos', error)
@@ -16,7 +16,7 @@ const getOne =  async (req,res)=> {
     try {
         const producto =  await modelos.obtenerUno(id)
         console.log(id)
-        res.send('Ok -> GET ONE (READ)')
+        res.json({producto})
     } catch (error) {
         console.log( 'No fue posible extraer el producto', error)
     }
