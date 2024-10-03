@@ -4,7 +4,7 @@ import handleMongoID from '../utils/handle-mongo-id.js'
 const getAll = async (req, res)=> {
     try {
         const productos =  await modelos.obtenerTodos()
-        res.json({productos})
+        res.json(handleMongoID(productos))
 
     } catch (error) {
         console.log( 'No fue posible extraer los productos', error)
