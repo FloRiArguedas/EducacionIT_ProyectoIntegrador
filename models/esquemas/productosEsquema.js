@@ -8,6 +8,12 @@ const ProductosEsquema = mongoose.Schema({
     foto: String,
     precio: Number,
     stock: Number
-})
+},
+{
+    timestamps: true,
+    versionKey: false
+}
+
+)
 
 export default ProductosEsquema
