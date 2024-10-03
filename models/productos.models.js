@@ -39,9 +39,12 @@ const CrearProducto =  async (producto) => {
 
 } 
 
-const actualizarProducto = () => {
+const actualizarProducto = async (id,productoAEditar) => {
 
     try {
+        const options = { new: true}
+        const productoEditado = await ProductosModelo.findByIdAndUpdate(id, productoAEditar, options)
+        return(productoEditado)
         
     } catch (error) {
         console.log('Error al actualizar el producto', error)

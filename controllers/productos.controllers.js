@@ -34,11 +34,11 @@ const create = async (req,res)=> {
 
 const update = async  (req,res)=> {
     const id = req.params.id
-    const productoEditado =req.body
+    const productoAEditar =req.body
 
     try {
-        const ProductoActualizado = await modelos.actualizarProducto(id, productoEditado)
-        res.send('Ok -> PUT (UPDATE)')
+        const ProductoActualizado = await modelos.actualizarProducto(id, productoAEditar)
+        res.json(ProductoActualizado)
         
     } catch (error) {
         console.log( 'No fue posible actualizar el producto', error)
