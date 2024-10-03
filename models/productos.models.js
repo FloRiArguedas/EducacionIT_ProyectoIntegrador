@@ -9,9 +9,10 @@ const obtenerTodos = async () => {
         const productos = await ProductosModelo.find()
         return productos
     } catch (error) {
-       console.log('Error al obtener los productos', error)
+        throw error
     }
 } 
+
 const obtenerUno = async (id) => {
     try {
         
@@ -20,11 +21,10 @@ const obtenerUno = async (id) => {
         return producto
 
     } catch (error) {
-        console.log('Error al obtener el producto', error)
+        throw error
     }
  
 } 
-
 
 const CrearProducto =  async (producto) => {
 
@@ -34,7 +34,7 @@ const CrearProducto =  async (producto) => {
         return productoCreado
         
     } catch (error) {
-        console.log('Error al crear el producto', error)
+        throw error
     }
 
 } 
@@ -47,9 +47,8 @@ const actualizarProducto = async (id,productoAEditar) => {
         return(productoEditado)
         
     } catch (error) {
-        console.log('Error al actualizar el producto', error)
+        throw error
     }
-
 } 
 
 const deleteProducto = async (id) => {
@@ -59,9 +58,8 @@ const deleteProducto = async (id) => {
         return(productoBorrado)
 
     } catch (error) {
-        console.log('Error al eliminar el producto', error)
+        throw error
     }
-
 } 
 
 export default {
