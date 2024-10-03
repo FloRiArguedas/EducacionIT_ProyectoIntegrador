@@ -15,7 +15,6 @@ const getOne =  async (req,res)=> {
 
     try {
         const producto =  await modelos.obtenerUno(id)
-        console.log(id)
         res.json({producto})
     } catch (error) {
         console.log( 'No fue posible extraer el producto', error)

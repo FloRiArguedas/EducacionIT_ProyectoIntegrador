@@ -26,15 +26,36 @@ const obtenerUno = async (id) => {
 } 
 
 
-const CrearProducto = () => {
+const CrearProducto =  async (producto) => {
+
+    try {
+        const docMongooseProducto = new ProductosModelo(producto)
+        const productoCreado = await docMongooseProducto.save()
+        console.log(productoCreado)
+        
+    } catch (error) {
+        console.log('Error al crear el producto', error)
+    }
 
 } 
 
 const actualizarProducto = () => {
 
+    try {
+        
+    } catch (error) {
+        console.log('Error al actualizar el producto', error)
+    }
+
 } 
 
 const deleteProducto = () => {
+
+    try {
+        
+    } catch (error) {
+        console.log('Error al eliminar el producto', error)
+    }
 
 } 
 
