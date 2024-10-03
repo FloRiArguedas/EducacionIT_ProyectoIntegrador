@@ -29,9 +29,9 @@ const obtenerUno = async (id) => {
 const CrearProducto =  async (producto) => {
 
     try {
-        const docMongooseProducto = new ProductosModelo(producto)
-        const productoCreado = await docMongooseProducto.save()
-        console.log(productoCreado)
+        const productoCreado = await ProductosModelo.create(producto)
+        //console.log(productoCreado)
+        return productoCreado
         
     } catch (error) {
         console.log('Error al crear el producto', error)

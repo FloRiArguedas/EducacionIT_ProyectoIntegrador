@@ -26,7 +26,7 @@ const create = async (req,res)=> {
 
     try {
         const productoCreado = await modelos.CrearProducto(producto)
-        res.status(201).send('Ok -> POST (CREATE)')
+        res.status(201).json({producto: productoCreado})
     } catch (error) {
         console.log( 'No fue posible crear el producto', error)
     }
