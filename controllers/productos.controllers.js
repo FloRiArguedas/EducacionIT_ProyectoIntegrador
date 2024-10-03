@@ -47,11 +47,11 @@ const update = async  (req,res)=> {
 
 const remove = async (req,res)=> {
     const id = req.params.id
-    console.log(id)
 
     try {
         const productoBorrado = await modelos.deleteProducto(id)
-        res.send('Ok -> DELETE (DELETE)')
+        console.log('Estoy borrando a...',productoBorrado)
+        res.json({producto: productoBorrado})
     } catch (error) {
         console.log( 'No fue posible eliminar el producto', error)
     }

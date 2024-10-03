@@ -49,10 +49,12 @@ const actualizarProducto = () => {
 
 } 
 
-const deleteProducto = () => {
+const deleteProducto = async (id) => {
 
     try {
-        
+        const productoBorrado = await ProductosModelo.findByIdAndDelete(id)
+        return(productoBorrado)
+
     } catch (error) {
         console.log('Error al eliminar el producto', error)
     }
