@@ -1,4 +1,5 @@
 import modelos from '../models/productos.models.js'
+import handleMongoID from '../utils/handle-mongo-id.js'
 
 const getAll = async (req, res)=> {
     try {
@@ -15,7 +16,7 @@ const getOne =  async (req,res)=> {
 
     try {
         const producto =  await modelos.obtenerUno(id)
-        res.json({producto})
+        res.json(handleMongoID(producto))
     } catch (error) {
         console.log( 'No fue posible extraer el producto', error)
     }

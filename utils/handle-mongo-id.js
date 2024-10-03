@@ -1,4 +1,4 @@
-import handleObjMongoToObjJs from "./handle-obj-mongo-to-js";
+import handleObjMongoToObjJs from "./handle-obj-mongo-to-obj-js.js";
 
 const handleMongoID = (elemento) => {
 
@@ -20,3 +20,7 @@ const handleMongoID = (elemento) => {
 
     return elemento
 }
+
+export default
+
+handleMongoID
