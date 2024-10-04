@@ -2,6 +2,7 @@ import express from 'express'
 import 'dotenv/config'
 import routerProductos from './routers/productos.router.js'
 import getConnection from './utils/get-connection.js';
+import cors from 'cors'
 
 //VARIABLES
 const app = express()
@@ -11,6 +12,7 @@ const uri_remota = process.env.URI_MONGO
 
 //MIDDLEWARE
 app.use(express.json())
+app.use(cors())
 
 
 //RUTAS
