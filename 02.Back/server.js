@@ -3,6 +3,7 @@ import 'dotenv/config'
 import routerProductos from './routers/productos.router.js'
 import getConnection from './utils/get-connection.js';
 import cors from 'cors'
+import routerCarritos from './routers/carritos.router.js';
 
 //VARIABLES
 const app = express()
@@ -18,6 +19,7 @@ app.use(cors())
 //RUTAS
 
 app.use('/api/v1/productos',routerProductos)
+app.use('/api/v1/carritos',routerCarritos)
 
 
 app.get('/', (req, res) => {
