@@ -1,5 +1,5 @@
-* PROYECTO INTEGRADOR - ETAPA 2 - FLORICELA ARGUEDAS
+# INTEGRADOR ETAPA 3 FLORICELA
 
-Link a Netlify: https://proyectointegradore2-floricelarguedas.netlify.app/
+Link  a Netlify: https://floricelaarguedasintegradoretapa3.netlify.app/
 
-Link al repositorio de Git: https://github.com/FloRiArguedas/EducacionIT_ProyectoIntegrador/tree/etapa2
+Git: https://github.com/FloRiArguedas/EducacionIT_ProyectoIntegrador/tree/etapa3

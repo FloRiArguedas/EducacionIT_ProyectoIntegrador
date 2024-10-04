@@ -1,0 +1,31 @@
+table.tabla-carrito {
+  border-collapse: collapse;
+  width: 95%;
+  margin-top: 3rem;
+  margin-left: 1rem;
+
+  th,
+  td {
+    border: 5px solid #6405c2;
+    padding: 2rem;
+    text-align: center;
+    font-size: large;
+  }
+  th {
+    background-color: #6405c2;
+    text-transform: uppercase;
+    color: white;
+  }
+}
+
+.bttnListado {
+    background-color: #f6c500;
+    font-size: medium;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    color: #6405c2;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-left: 0.8rem;
+    margin-bottom: 5rem;
+  }

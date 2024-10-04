@@ -2,75 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <title>Proyecto Integrador - Inicio</title>
+    <title>Vite + React</title>
   </head>
   <body>
-    <header class="main-header">
-      <input type="checkbox" id="menu">
-
-      <nav class="nav-bar">
-        <ul class="nav-bar__nav-list">
-          <li class="nav-bar__nav-item">
-            <a href="index.html" class="nav-bar__nav-link">Inicio</a>
-          </li>
-          <li class="nav-bar__nav-item">
-            <a href="#" class="nav-bar__nav-link">Alta</a>
-          </li>
-          <li class="nav-bar__nav-item">
-            <a href="views/nosotros.html" class="nav-bar__nav-link">Nosotros</a>
-          </li>
-          <li class="nav-bar__nav-item">
-            <a href="views/contacto.html" class="nav-bar__nav-link">Contacto</a>
-          </li>
-        </ul>
-      </nav> <!-- .nav-bar -->
-
-      <div class="search-bar">
-        <div class="search-bar__logo-container">
-          <img class="search-bar__logo3d4u" src="/img/Logo3D4UOriginal.webp" alt="Logo 3D4U Orginal Morado con Amarillo"/>
-        </div>
-        <form action="#" class="search-bar__form-container">
-          <label for="busqueda" class="search-bar__form-label">Buscar Figuras</label>
-          <input type="search" class="search-bar__form-search" id="busqueda">
-          <input type="submit" class="search-bar__form-submit" value="Buscar">
-        </form>
-        <div class="search-bar__carrito-container"><i class="fa-solid fa-cart-shopping"></i></div>
-        <div class="menu-toogle">
-          <label for="menu" class="menu-toogle__label">
-            <span class="menu-toogle__top-bread"></span>
-            <span class="menu-toogle__meat"></span>
-            <span class="menu-toogle__bottom-bread"></span>
-          </label>
-        </div>
-      </div> <!-- .search-bar -->
-    </header> <!-- main -header -->
-
-    <main>
-
-      <div class="Banner-Container-fixed">
-        <img class="Banner-Container-fixed__HomeImage" src="/img/impresion3D.webp" alt="Impresion 3D en primera plana">
-      </div>
-      
-
-      <section class="section-cards">
-        <header class="section-cards__header">
-          <h1>Conoce las figuras que tenemos disponibles</h1>
-          <p>Se encontraron 12 figuras listas para entrega</p>
-        </header>
-      
-      
-        <div class="cards-container" id="cardsContainer">
-
-          
-        </div> <!-- CARDS CONTAINER -->
-
-        <footer class="footer">
-          <p>Creado en 2024 | © Derechos Reservados © | 3D4U Heredia, Costa Rica</p>
-        </footer>
-      </section>
-    </main>
-    <script type="module" src="/main.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

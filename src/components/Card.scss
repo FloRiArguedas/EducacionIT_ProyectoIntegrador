@@ -1,0 +1,134 @@
+@media (min-width: 576px) {
+  .card {
+    width: 200px;
+    max-width: 300px;
+    height: 370px;
+    background-color: white;
+    overflow: hidden; /* Ajusta al contenedor, lo que sobra lo corta */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 0px 1px 5px 0px (0, 0, 0, 0.5);
+    transition: clip-path 0.8s;
+    margin-bottom: 2rem;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.03);
+      transform-origin: bottom;
+      box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.5);
+      background-color: #6405c2;
+    }
+
+    &__image-container {
+      height: 200px;
+      overflow: hidden;
+    }
+
+    &__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:hover & image,
+    &:focus &__image {
+      transform: scale(1.4) rotate(5deg);
+      transform-origin: center;
+    }
+
+    &__content {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      padding-top: 0.2rem;
+    }
+
+    &__heading {
+      padding-bottom: 0.5rem;
+    }
+
+    &:hover &__description,
+    &:focus &__description {
+      color: white;
+      &__buttonAC {
+        color: #f6c500;
+        margin-top: 1rem;
+        background-color: black;
+        padding: 0.3rem;
+        border-radius: 0.4rem;
+        font-size: 90%;
+      }
+    }
+
+    &__description {
+      &__buttonAC {
+        color: white;
+        background-color: #6405c2;
+        margin-top: 1rem;
+        padding: 0.3rem;
+        border-radius: 0.4rem;
+        font-size: small;
+        font-size: 90%;
+      }
+    }
+
+    &:hover &__heading,
+    &:focus &__heading {
+      color: #f6c500;
+    }
+
+    &__image-container {
+      height: 180px;
+      overflow: hidden;
+      clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 220px,
+        0 180px
+      ); /* Estado inicial, sin mouse encima */
+    }
+
+    &:hover &__image-container,
+    &:focus &__image-container {
+      clip-path: polygon(0 0, 100% 0, 100% 200px, 0 990px); /* Estado final */
+      border: 5px solid #6405c2;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------- */
+
+.card {
+  @media (max-width: 768px) {
+    & {
+      min-width: 400px;
+      max-width: 500px;
+      height: 200px;
+    }
+
+    &__article {
+      display: flex;
+    }
+
+    & &__image-container {
+      /* .card .card__image-container */
+      width: 40%;
+      //clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);  /* Estado Inicial */
+    }
+
+    &:hover &__image-container,
+    &:focus &__image-container {
+      width: 40%;
+      //clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);  /* Estado final */
+    }
+  }
+}
+
+/* -------------------------------------------------------------------- */
+
+.section-cards {
+  &__header {
+    padding-bottom: 2rem;
+    padding-top: 0.8rem;
+    text-align: center;
+  }
+}

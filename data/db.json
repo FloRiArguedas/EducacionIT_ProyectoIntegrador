@@ -1,16 +1,82 @@
 {
-    "productos": [
-        {"id": 1, "nombre": "Busto de Batman" , "imagen": "/img/batman.webp" , "descripcion": "Este busto de Batman, es la pieza que necesitabas para lucir a tu superheroe favorito."},
-        {"id": 2, "nombre": "Boo Monsters Inc" , "imagen": "/img/boo.webp" , "descripcion": "Con esta Mini de Boo podrás añadir ternura a tu fanatismo por Monsters Inc. ¿A quién no le encanta Boo?"},
-        {"id": 3, "nombre": "Buzz Ligth Year" , "imagen": "/img/buzzLY.webp" , "descripcion": "Imagínate el astronauta más famoso de la historia, adornando uno de tus espacios.¡Despega al infinito y más allá con Buzz Lightyear!"},
-        {"id": 4, "nombre": "Chewbacca" , "imagen": "/img/chewbacca.webp" , "descripcion": "El Wookie Favorito de todos. Perfecta para cualquier fan de Star Wars. ¡Haz tuyo un pedazo de la saga y deja que Chewbacca te acompañe siempre!"},
-        {"id": 5, "nombre": "Darth Vader" , "imagen": "/img/DarthVader.webp" , "descripcion": "¡Conquista la galaxia con esta figura de Darth Vader! Un must para cualquier fan de Star Wars!"},
-        {"id": 6, "nombre": "Dobby" , "imagen": "/img/dobby.webp" , "descripcion": "¡Añade a tu colección a Dobby, el elfo libre! Perfecto para los fans de Harry Potter!"},
-        {"id": 7, "nombre": "Frodo" , "imagen": "/img/frodo.webp" , "descripcion": "¡Lleva la magia de la Tierra Media a tu hogar con esta figura de Frodo! Ideal para fans de El Señor de los Anillos!"},
-        {"id": 8, "nombre": "Gandalf" , "imagen": "/img/gandalf.webp" , "descripcion": "¡Invoca la sabiduría de Gandalf en tu espacio! Una pieza esencial para amantes de la fantasía!"},
-        {"id": 9, "nombre": "Pikachu" , "imagen": "/img/pikachu.webp" , "descripcion": "¡Atrapa a Pikachu y electriza tu colección! Un favorito eterno para cualquier entrenador Pokémon!"},
-        {"id": 10, "nombre": "Harry Potter", "imagen": "/img/potter.webp" , "descripcion": "¡Magia y aventuras te esperan con esta figura de Harry Potter! Imprescindible para los fans del joven mago!"},
-        {"id": 11, "nombre": "Stitch" , "imagen": "/img/Stitch.webp" , "descripcion": "¡Añade travesura y encanto con esta figura de Stitch! Perfecto para cualquier fan de Disney!"},
-        {"id": 12, "nombre": "Troll" , "imagen": "/img/troll.webp" , "descripcion": "¡Trae un toque de fantasía con este troll detallado! Ideal para cualquier colección fantástica!"}
-    ]
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Busto de Batman",
+      "imagen": "/img/batman.webp",
+      "descripcion": "Este busto de Batman, es la pieza que necesitabas para lucir a tu superheroe favorito."
+    },
+    {
+      "id": 2,
+      "nombre": "Boo Monsters Inc",
+      "imagen": "/img/boo.webp",
+      "descripcion": "Con esta Mini de Boo podrás añadir ternura a tu fanatismo por Monsters Inc. ¿A quién no le encanta Boo?"
+    },
+    {
+      "id": 3,
+      "nombre": "Buzz Ligth Year",
+      "imagen": "/img/buzzLY.webp",
+      "descripcion": "Imagínate el astronauta más famoso de la historia, adornando uno de tus espacios.¡Despega al infinito y más allá con Buzz Lightyear!"
+    },
+    {
+      "id": 4,
+      "nombre": "Chewbacca",
+      "imagen": "/img/chewbacca.webp",
+      "descripcion": "El Wookie Favorito de todos. Perfecta para cualquier fan de Star Wars. ¡Haz tuyo un pedazo de la saga y deja que Chewbacca te acompañe siempre!"
+    },
+    {
+      "id": 5,
+      "nombre": "Darth Vader",
+      "imagen": "/img/DarthVader.webp",
+      "descripcion": "¡Conquista la galaxia con esta figura de Darth Vader! Un must para cualquier fan de Star Wars!"
+    },
+    {
+      "id": 6,
+      "nombre": "Dobby",
+      "imagen": "/img/dobby.webp",
+      "descripcion": "¡Añade a tu colección a Dobby, el elfo libre! Perfecto para los fans de Harry Potter!"
+    },
+    {
+      "id": 7,
+      "nombre": "Frodo",
+      "imagen": "/img/frodo.webp",
+      "descripcion": "¡Lleva la magia de la Tierra Media a tu hogar con esta figura de Frodo! Ideal para fans de El Señor de los Anillos!"
+    },
+    {
+      "id": 8,
+      "nombre": "Gandalf",
+      "imagen": "/img/gandalf.webp",
+      "descripcion": "¡Invoca la sabiduría de Gandalf en tu espacio! Una pieza esencial para amantes de la fantasía!"
+    },
+    {
+      "id": 9,
+      "nombre": "Pikachu",
+      "imagen": "/img/pikachu.webp",
+      "descripcion": "¡Atrapa a Pikachu y electriza tu colección! Un favorito eterno para cualquier entrenador Pokémon!"
+    },
+    {
+      "id": 10,
+      "nombre": "Harry Potter",
+      "imagen": "/img/potter.webp",
+      "descripcion": "¡Magia y aventuras te esperan con esta figura de Harry Potter! Imprescindible para los fans del joven mago!"
+    },
+    {
+      "id": 11,
+      "nombre": "Stitch",
+      "imagen": "/img/Stitch.webp",
+      "descripcion": "¡Añade travesura y encanto con esta figura de Stitch! Perfecto para cualquier fan de Disney!"
+    },
+    {
+      "id": 12,
+      "nombre": "Troll",
+      "imagen": "/img/troll.webp",
+      "descripcion": "¡Trae un toque de fantasía con este troll detallado! Ideal para cualquier colección fantástica!"
+    },
+    {
+      "id": 13,
+      "nombre": "Coco",
+      "descripcion": "Coco de la película 17cm",
+      "imagen": "img/coco.jpg"
+    }
+  ]
 }
