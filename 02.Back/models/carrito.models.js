@@ -8,6 +8,7 @@ const crearCarrito = async (carrito) => {
     try {
         const carritoCreado = new CarritosModelo ({carrito})
         const carritoGuardado = await carritoCreado.save() //Guardo el carrito en la DB
+        return carritoGuardado
 
     } catch (error) {
         console.log('No fue posible crear el carrito', error)

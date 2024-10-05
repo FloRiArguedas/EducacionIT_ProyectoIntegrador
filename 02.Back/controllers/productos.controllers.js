@@ -27,7 +27,7 @@ const create = async (req,res)=> {
 
     try {
         const productoCreado = await modelos.CrearProducto(producto)
-        res.status(201).json(productoCreado)
+        res.status(201).json(handleMongoID(productoCreado))
     } catch (error) {
         console.log( 'No fue posible crear el producto', error)
     }
@@ -39,7 +39,7 @@ const update = async  (req,res)=> {
 
     try {
         const ProductoActualizado = await modelos.actualizarProducto(id, productoAEditar)
-        res.json(ProductoActualizado)
+        res.json(handleMongoID(ProductoActualizado))
         
     } catch (error) {
         console.log( 'No fue posible actualizar el producto', error)
@@ -52,7 +52,7 @@ const remove = async (req,res)=> {
     try {
         const productoBorrado = await modelos.deleteProducto(id)
         console.log(productoBorrado)
-        res.json({producto: productoBorrado})
+        res.json(handleMongoID(productoBorrado))
     } catch (error) {
         console.log( 'No fue posible eliminar el producto', error)
     }
