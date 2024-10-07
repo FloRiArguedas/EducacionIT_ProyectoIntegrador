@@ -17,7 +17,7 @@ const SearchBar = () => {
             <input type="search" className="search-bar__form-search" id="busqueda" />
             <input type="submit" className="search-bar__form-submit" value="Buscar" />
         </form>
-        <div className="search-bar__carrito-container"><Link to="carrito">CA</Link></div>
+        <div className="search-bar__carrito-container"><Link className="search-bar__carrito-container__carritolink" to="carrito"><i className="fa-solid fa-cart-shopping"></i></Link></div>
         {/* <i className="fa-solid fa-cart-shopping"></i> IMAGEN CARRITO */}
         <div className="menu-toogle">
             <label htmlFor="menu" className="menu-toogle__label">

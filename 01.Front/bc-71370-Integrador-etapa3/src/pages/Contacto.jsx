@@ -25,7 +25,7 @@ const Contacto = () => {
       <div className="Form-Container__Form-contact">
         <form>
           <div className="Form-Container__Form-contact__grupo">
-            <label for="label-nombre">Nombre: * </label>
+            <label htmlFor="label-nombre">Nombre: * </label>
             <input
               type="text"
               name="nombre"
@@ -36,7 +36,7 @@ const Contacto = () => {
           </div>
 
           <div className="Form-Container__Form-contact__grupo">
-            <label for="label-apellido">Apellido: </label>
+            <label htmlFor="label-apellido">Apellido: </label>
             <input
               type="text"
               name="apellido"
@@ -46,7 +46,7 @@ const Contacto = () => {
           </div>
 
           <div className="Form-Container__Form-contact__grupo">
-            <label for="label-email">Correo Electrónico: * </label>
+            <label htmlFor="label-email">Correo Electrónico: * </label>
             <input
               type="email"
               name="email"
@@ -57,13 +57,13 @@ const Contacto = () => {
           </div>
 
           <div className="Form-Container__Form-contact__grupo">
-            <label for="label-numero">Número de teléfono: </label>
+            <label htmlFor="label-numero">Número de teléfono: </label>
             <input type="tel" name="numero" id="label-numero" />
           </div>
 
           <div className="Form-Container__Form-contact__grupo">
             <div id="description">
-              <label for="label-descripcion">Cuéntanos los detalles: * </label>
+              <label htmlFor="label-descripcion">Cuéntanos los detalles: * </label>
               <textarea
                 name="detalles"
                 id="label-descripcion"
@@ -88,19 +88,19 @@ const Contacto = () => {
 
     {/* <!-- Medios de Comunicacion --> */}
 
-    <div class="bloque-MediosyRedes">
+    <div className="bloque-MediosyRedes">
       <div>
         <h2>Contáctanos en nuestros medios de comunicación</h2>
-        <div class="bloque-MediosyRedes__MediosComunicacion">
-          <div class="bloque-MediosyRedes__grupo-canal">
-            <p class="whatsapp">
-              <i class="fa-brands fa-whatsapp"></i> Escríbenos a nuestro <a href="https://wa.me/50670128588" target="_blank"><i> WhatsApp</i></a>
+        <div className="bloque-MediosyRedes__MediosComunicacion">
+          <div className="bloque-MediosyRedes__grupo-canal">
+            <p className="whatsapp">
+              <i className="fa-brands fa-whatsapp"></i> Escríbenos a nuestro <a href="https://wa.me/50670128588" target="_blank"><i> WhatsApp</i></a>
             </p>
           </div>
 
-          <div class="bloque-MediosyRedes__grupo-canal">
-            <p class="email">
-              <i class="fa-solid fa-envelope"></i> Escríbenos a nuestro <a href="mailto:3d4u.servicioalcliente@gmail.com" target="_blank"><i> Correo Electrónico</i></a>
+          <div className="bloque-MediosyRedes__grupo-canal">
+            <p className="email">
+              <i className="fa-solid fa-envelope"></i> Escríbenos a nuestro <a href="mailto:3d4u.servicioalcliente@gmail.com" target="_blank"><i> Correo Electrónico</i></a>
             </p>
           </div>
         </div>
@@ -109,16 +109,16 @@ const Contacto = () => {
       <div>
         <h2>Siguenos en nuestras Redes Sociales</h2>
 
-        <div class="bloque-MediosyRedes__RedesSociales">
-          <div class="bloque-MediosyRedes__grupo-canal">
-            <p class="instagram">
-              <i class="fa-brands fa-instagram"></i> Instagram: <a href="https://www.instagram.com/3d4u.cr/?igsh=OWdnOWltNno5bDR3" target="_blank"> @3D4U.cr</a>
+        <div className="bloque-MediosyRedes__RedesSociales">
+          <div className="bloque-MediosyRedes__grupo-canal">
+            <p className="instagram">
+              <i className="fa-brands fa-instagram"></i> Instagram: <a href="https://www.instagram.com/3d4u.cr/?igsh=OWdnOWltNno5bDR3" target="_blank"> @3D4U.cr</a>
             </p>
           </div>
 
-          <div class="bloque-MediosyRedes__grupo-canal">
-            <p class="tiktok">
-              <i class="fa-brands fa-tiktok"></i> Tik Tok:<a href="https://www.tiktok.com/@3d4u.cr" target="_blank"> @3D4U.cr</a>
+          <div className="bloque-MediosyRedes__grupo-canal">
+            <p className="tiktok">
+              <i className="fa-brands fa-tiktok"></i> Tik Tok:<a href="https://www.tiktok.com/@3d4u.cr" target="_blank"> @3D4U.cr</a>
             </p>
           </div>
         </div>
