@@ -1,4 +1,5 @@
 import useTitulo from "../hooks/useTitulo"
+import './Contacto.scss'
 
 const Contacto = () => {
 
