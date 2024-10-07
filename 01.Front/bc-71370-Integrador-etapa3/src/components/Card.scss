@@ -53,11 +53,12 @@
         color: #f6c500;
         margin-top: 1rem;
         background-color: black;
-        padding: 0.3rem;
+        padding: 0.5rem;
         border-radius: 0.4rem;
-        font-size: 90%;
+        font-size: 0.6rem;
       }
     }
+
 
     &__description {
       &__buttonAC {
@@ -66,10 +67,11 @@
         margin-top: 1rem;
         padding: 0.3rem;
         border-radius: 0.4rem;
-        font-size: small;
-        font-size: 90%;
+        font-size: 0.6rem;
       }
     }
+
+    
 
     &:hover &__heading,
     &:focus &__heading {
