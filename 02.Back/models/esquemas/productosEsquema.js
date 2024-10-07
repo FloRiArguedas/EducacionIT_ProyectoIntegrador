@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 const ProductosEsquema = mongoose.Schema({
     nombre: String,
     descripcion: String,
-    foto: String,
+    imagen: String,
     precio: Number,
     stock: Number
 },

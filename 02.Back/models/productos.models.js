@@ -30,7 +30,6 @@ const CrearProducto =  async (producto) => {
 
     try {
         const productoCreado = await ProductosModelo.create(producto)
-        //console.log(productoCreado)
         return productoCreado
         
     } catch (error) {
