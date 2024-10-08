@@ -38,10 +38,17 @@ button {
     &:hover {
         background-color: #f6c500;
         border: none;
-        width: 8%;
         color: #6405c2;
     }
-}
+
+ }
+
+ .bttn-SC{
+    &:hover {
+        width: 8%;
+    }
+} 
+
 
 
 //#6405c2

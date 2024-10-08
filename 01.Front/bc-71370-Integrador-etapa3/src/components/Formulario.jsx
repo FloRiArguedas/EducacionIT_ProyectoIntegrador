@@ -89,8 +89,8 @@ const Formulario = () => {
             onChange={handleChange}
           />
         </div>
-        <button>Guardar</button>
-        <button onClick={handleReset}>Limpiar</button>
+        <button className= "bttn-SC">Guardar</button>
+        <button className= "bttn-SC" onClick={handleReset}>Limpiar</button>
       </form>
     </>
   );
