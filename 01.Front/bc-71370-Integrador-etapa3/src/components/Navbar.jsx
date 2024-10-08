@@ -1,5 +1,6 @@
 import menuItems from "../constants/menuItems";
 import NavItem from "./NavItem";
+import './Navbar.scss'
 
 const Navbar = () => {
   return (

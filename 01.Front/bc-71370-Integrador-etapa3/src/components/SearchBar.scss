@@ -1,0 +1,83 @@
+  /* ----------------------------- */
+  /* SEARCH BAR */
+  /* ----------------------------- */
+  
+  .search-bar {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+  
+    &__logo-container {
+      width: 18.75em;
+      height: 5.75em;
+    }
+  
+    &__logo3d4u {
+      height: 100%;
+      width: auto;
+      padding: 0.2rem 2rem 0.3rem 2rem;
+    }
+  
+    &__form-container {
+      padding: 1rem;
+      background-color: black;
+      display: flex;
+      flex-basis: 100%;
+      justify-content: center;
+    }
+  
+    &__form-label {
+      color: white;
+      padding-right: 1rem;
+      padding-top: 0.2rem;
+      margin-top: 1rem;
+    }
+  
+    &__form-search {
+      background-color: white;
+      width: 70%;
+      border-radius: 0.5rem;
+      &:hover {
+        background-color: #e2e1db;
+      }
+       &:focus{
+        border: 0.3rem solid #6405c2;  
+      }
+    }
+  
+    &__form-submit {
+      background-color: #6405c2;
+      color: white;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      border-radius: 0.5rem;
+      border: 2px solid #6405c2;  
+      font-size: medium;  
+      &:hover {
+        background-color: white;
+        color:#6405c2;
+      }
+    }
+  
+    &__carrito-container {
+      flex: 0 0 3rem; /* shorthand (grow shrihk basis */
+      background-color: black;
+      color: #f6c500;
+      padding-top: 1.2rem;
+      &__carritolink{
+        padding-right: 5rem;
+        padding-left: 10rem;
+        color:#f6c500;
+        padding-bottom: 3rem;
+      }
+    }
+  }
+
+  .fa-cart-shopping{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    &:hover {
+        color:#6405c2;
+      }
+
+}
