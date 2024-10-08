@@ -2,7 +2,7 @@
   .card {
     width: 200px;
     max-width: 300px;
-    height: 370px;
+    height: auto;
     background-color: white;
     overflow: hidden; /* Ajusta al contenedor, lo que sobra lo corta */
     border-top-left-radius: 5px;
@@ -40,6 +40,7 @@
       padding-left: 0.5rem;
       padding-right: 0.5rem;
       padding-top: 0.2rem;
+
     }
 
     &__heading {
@@ -56,13 +57,16 @@
 
 
     &__description {
+
+
       &__buttonAC {
-        text-align: end;
+        text-align: center;
         background-color: white;
-        border-radius: 0%;
-        margin-top: 1rem;
+        border-radius: 0%;    
         border: none;
+        margin-top: auto;
       }
+
       .fa-cart-shopping{
         font-size: 1.5rem;
         color: #f6c500;
@@ -79,16 +83,16 @@
       color: #f6c500;
     }
 
-    &__image-container {
-      height: 180px;
-      overflow: hidden;
-      clip-path: polygon(
-        0 0,
-        100% 0,
-        100% 220px,
-        0 180px
-      ); /* Estado inicial, sin mouse encima */
-    }
+    // &__image-container {
+    //   height: 180px;
+    //   overflow: hidden;
+    //   clip-path: polygon(
+    //     0 0,
+    //     100% 0,
+    //     100% 220px,
+    //     0 180px
+    //   ); /* Estado inicial, sin mouse encima */
+    // }
 
     &:hover &__image-container,
     &:focus &__image-container {
