@@ -11,7 +11,7 @@ const Alta = () => {
     <>
     <h1>Formulario Alta de Productos</h1>
     <h2>Agregar un producto</h2>
-    <Formulario />
+    <Formulario/>
     <hr />
     <Tabla/>
     </>

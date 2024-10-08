@@ -19,8 +19,8 @@ const TablaFila = ({producto}) => {
       <img className="img-row" src={producto.imagen} alt={producto.nombre} />
     </td>
     <td>
-      <button onClick={() => handleEditar(producto)}>Editar</button>
-      <button>Borrar</button>
+      <button  className="bttn-editar" onClick={() => handleEditar(producto)}>Editar</button>
+      <button className="bttn-borrar">Borrar</button>
     </td>
    </tr>
   )

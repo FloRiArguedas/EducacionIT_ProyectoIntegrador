@@ -1,3 +1,15 @@
 .img-row{
     width: 60px;
 }
+
+.bttn-editar {
+&:hover {
+    width: 50%;
+}
+}
+
+.bttn-borrar{
+    &:hover {
+        width: 50%;
+    }
+}
