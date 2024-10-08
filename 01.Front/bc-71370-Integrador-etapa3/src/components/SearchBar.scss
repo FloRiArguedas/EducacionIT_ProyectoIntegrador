@@ -28,7 +28,6 @@
   
     &__form-label {
       color: white;
-      padding-right: 1rem;
       padding-top: 0.2rem;
       margin-top: 1rem;
     }
@@ -54,8 +53,10 @@
       border: 2px solid #6405c2;  
       font-size: medium;  
       &:hover {
-        background-color: white;
+        background-color: #f6c500;
         color:#6405c2;
+        border: none;
+        width: 12%;
       }
     }
   
