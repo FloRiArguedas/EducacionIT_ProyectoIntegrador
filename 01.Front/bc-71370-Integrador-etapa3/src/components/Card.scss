@@ -49,30 +49,31 @@
     &:hover &__description,
     &:focus &__description {
       color: white;
-      &__buttonAC {
-        color: #f6c500;
-        margin-top: 1rem;
-        background-color: black;
-        padding: 0.5rem;
-        border-radius: 0.4rem;
-        font-size: 0.6rem;
+      &__buttonAC{
+        background-color: #6405c2;
       }
     }
 
 
     &__description {
       &__buttonAC {
-        color: white;
-        background-color: #6405c2;
+        text-align: end;
+        background-color: white;
+        border-radius: 0%;
         margin-top: 1rem;
-        padding: 0.3rem;
-        border-radius: 0.4rem;
-        font-size: 0.6rem;
+        border: none;
+      }
+      .fa-cart-shopping{
+        font-size: 1.5rem;
+        color: #f6c500;
+        &:hover{
+          font-size: 1.8rem;
+          color: #ffffff;
+        }
       }
     }
 
-    
-
+   
     &:hover &__heading,
     &:focus &__heading {
       color: #f6c500;

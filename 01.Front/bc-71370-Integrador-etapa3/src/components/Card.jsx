@@ -22,7 +22,7 @@ const Card = ({producto}) => {
           <h2 className="card__heading"> {producto.nombre}  </h2>
           <div className="card__description">
             <p>"{producto.descripcion}"</p>
-            <button className="card__description__buttonAC" onClick={() => handleAgregar(producto)}><i className="fa-solid fa-cart-shopping"> Agregar al carrito</i></button>
+            <button className="card__description__buttonAC" onClick={() => handleAgregar(producto)}><i className="fa-solid fa-cart-shopping"></i></button>
           </div>
         </div>
       </article>
