@@ -1,0 +1,5 @@
+URL GitHub Frontend  = https://github.com/FloRiArguedas/EducacionIT_ProyectoIntegrador/tree/FusionFrontBack
+URL GitHub Backend = https://github.com/FloRiArguedas/EducacionIT_ProyectoIntegrador/tree/FusionFrontBack
+URL GitHub Proyecto completo = https://github.com/FloRiArguedas/EducacionIT_ProyectoIntegrador
+URL Netlify (http://netlify...) = https://floricela-proyectointegrador-etapa4.netlify.app
+Endpoints a productos y carrito de Render (http://render…) = https://educacionit-proyectointegrador-1.onrender.com/api/v1/productos/, https://educacionit-proyectointegrador-1.onrender.com/api/v1/carritos/
