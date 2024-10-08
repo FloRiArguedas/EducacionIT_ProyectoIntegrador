@@ -83,17 +83,6 @@
       color: #f6c500;
     }
 
-    // &__image-container {
-    //   height: 180px;
-    //   overflow: hidden;
-    //   clip-path: polygon(
-    //     0 0,
-    //     100% 0,
-    //     100% 220px,
-    //     0 180px
-    //   ); /* Estado inicial, sin mouse encima */
-    // }
-
     &:hover &__image-container,
     &:focus &__image-container {
       clip-path: polygon(0 0, 100% 0, 100% 200px, 0 990px); /* Estado final */
