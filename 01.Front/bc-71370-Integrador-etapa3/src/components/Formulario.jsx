@@ -58,7 +58,7 @@ const Formulario = () => {
     <>
       <h3>Agregar : Editar</h3>
 
-      <form onSubmit={handleSubmit}>
+      <form className='form-alta' onSubmit={handleSubmit}>
         <div>
           <label className='lbl_form' htmlFor="lbl-nombre">Nombre:</label>
           <input
